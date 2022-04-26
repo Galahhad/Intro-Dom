@@ -43,8 +43,7 @@
     valueThree.style.fontSize = "30px";
 
     body.append(supremeWrap);
-    supremeWrap.prepend(firstWrap);
-    firstWrap.after(lastWrap);
+    supremeWrap.prepend(firstWrap, lastWrap);
     lastWrap.prepend(valueOne, valueTwo, valueThree);
 </script>
 </body>
