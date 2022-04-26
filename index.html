@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Super App</title>
+</head>
+<body>
+<script>
+    const body = document.body;
+    const supremeWrap = document.createElement("div");
+    const firstWrap = document.createElement("div");
+    const lastWrap = document.createElement("div");
+    const valueOne = document.createElement("a");
+    const valueTwo = document.createElement("a");
+    const valueThree = document.createElement("a");
+
+    supremeWrap.style.margin = "auto";
+    supremeWrap.style.width = "640px";
+
+    firstWrap.style.border = "2px solid darkred";
+    firstWrap.style.borderRadius = "15px";
+    firstWrap.style.padding = "20px";
+    firstWrap.textContent = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus adipisci alias, aliquid, autem debitis doloribus fugit"
+    firstWrap.style.fontSize = "30px"
+
+    lastWrap.style.padding = "20px";
+    lastWrap.style.display = "flex";
+    lastWrap.style.justifyContent = "space-between";
+
+    valueOne.href = "https://intocode.ru/";
+    valueOne.textContent = "intocode";
+    valueOne.style.color = "blue";
+    valueOne.style.fontSize = "30px";
+
+    valueTwo.textContent = "google";
+    valueTwo.href = "https://google.com/";
+    valueTwo.style.color = "blue";
+    valueTwo.style.fontSize = "30px";
+
+    valueThree.href = "https://instagram.com/";
+    valueThree.textContent = "instagram";
+    valueThree.style.color = "blue";
+    valueThree.style.fontSize = "30px";
+
+    body.append(supremeWrap);
+    supremeWrap.prepend(firstWrap);
+    firstWrap.after(lastWrap);
+    lastWrap.prepend(valueOne, valueTwo, valueThree);
+</script>
+</body>
+</html>
